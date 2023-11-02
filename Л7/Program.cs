@@ -104,7 +104,7 @@ namespace Л7
                 Console.Write($"Класс: ");
                 schoolchild.SchoolClass = Console.ReadLine().Trim();
                 Console.Write($"Количество контрольных в полугодии: ");
-                schoolchild.NumControlWork = Console.Read();
+                schoolchild.NumControlWork = Convert.ToInt32(Console.ReadLine().Trim());
             }
 
             public string ToString(Schoolchild schoolchild)
@@ -126,13 +126,12 @@ namespace Л7
         internal void WriteStudent(Student student)
         {
             WriteLearner(student);
-            student.Age = Convert.ToInt32(Console.ReadLine().Trim());
             Console.Write($"Университет: ");
             student.University = Console.ReadLine().Trim();
             Console.Write($"Группа: ");
             student.UniversityGroup = Console.ReadLine().Trim();
             Console.Write($"Количество экзаменов в семестре: ");
-            student.NumExame = Console.Read();
+            student.NumExame = Convert.ToInt32(Console.ReadLine().Trim());
         }
 
 
